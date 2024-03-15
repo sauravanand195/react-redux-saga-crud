@@ -17,6 +17,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Demo from './components/Demo';
+import Basic from './components/Basic';
+import './styles/globals.css'
 
 const pages = ['Form', 'Table'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -42,7 +44,7 @@ const App = () => {
 
     return (
         <>
-            <AppBar position="static">
+            {/* <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Typography
@@ -141,18 +143,21 @@ const App = () => {
                         </Box>
                     </Toolbar>
                 </Container>
-            </AppBar>
+            </AppBar> */}
             <br />
             <Provider store={store}>
                 <Grid container spacing={{ xs: 2, md: 3 }}>
                     {/* <Grid item xs={12} md={4} lg={6}>
                         <MyForm />
-                    </Grid>
-                    <Grid item xs={12} md={8} lg={6}>
+                    </Grid> */}
+                    {/* <Grid item xs={12} md={8} lg={6}>
                         <MyTable />
                     </Grid> */}
-                    <Grid item xs={12} md={8} lg={6}>
+                    {/* <Grid item xs={12} md={8} lg={6}>
                         <Demo />
+                    </Grid> */}
+                    <Grid item xs={12} md={8} lg={6}>
+                        <Basic />
                     </Grid>
                 </Grid>
             </Provider>
